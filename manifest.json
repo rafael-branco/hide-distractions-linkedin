@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Distractions - LinkedIn",
+    "version": "1.0",
+    "description": "Inject custom CSS into LinkedIn to hide the feed.",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.linkedin.com/feed/"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}
